@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name" translatable="false">GCCard</string>
+
+    <string name="contactPic">Contact</string>
+    <string name="idName" translatable="false">Giacomo Ciotola</string>
+    <string name="role">Android Dev</string>
+    <string name="postalAddress" translatable="false">Via G. Castellaccio, 99</string>
+    <string name="postalCode" translatable="false">80075</string>
+    <string name="city" translatable="false">Forio NA</string>
+    <string name="country">Italy</string>
+    <string name="message">This is my Business Card. I\'m an engineer and an Android Dev, but I have other capabilities too. If you want to know more, feel free to contact me. With this Business Card app on your phone, you can click on the colored contact icons, and perform the relative actions. You can even download my resume. See you soon</string>
+    <string name="phoneNumber">Call me</string>
+    <string name="email">Send to me an email</string>
+    <string name="website">Visit my old website</string>
+    <string name="addressPic" translatable="false">Address</string>
+    <string name="idPic" translatable="false">Image</string>
+    <string name="phonePic" translatable="false">+393735275628</string>
+    <string name="emailPic" translatable="false">giacomo.ciotola@gmail.com</string>
+    <string name="websitePic" translatable="false">http://www.gcengineering.it</string>
+    <string name="linkedInPic" translatable="false">http://www.linkedin.com/in/giacomo-ciotola-62207333/</string>
+    <string name="linkedIn">Add me on LinkedIn</string>
+    <string name="facebookPic" translatable="false">https://www.facebook.com/519118900</string>
+    <string name="facebook">Find me on Facebook</string>
+    <string name="twitterPic" translatable="false">https://twitter.com/giatoki</string>
+    <string name="twitter">Follow me on Twitter</string>
+    <string name="resumePic" translatable="false">http://www.gcengineering.it/images/curriculum.pdf</string>
+    <string name="resume">Download my pdf resume</string>
+</resources>

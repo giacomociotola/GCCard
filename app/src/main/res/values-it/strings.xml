@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GCCard</string>
+    <string name="contactPic">Contatti</string>
+    <string name="role">Sviluppatore Android</string>
+    <string name="country">Italia</string>
+    <string name="message">Questo è il mio biglietto da visita. Sono un ingegnere e uno sviluppatore Android, ma ho anche altre capacità. Se vuoi saperne di più, puoi contattarmi.  Clicca sulle icone colorate e permetti alla app di eseguire le relative azioni. Puoi anche scaricare il mio Curriculum Vitae. A presto</string>
+    <string name="phoneNumber">Chiamami</string>
+    <string name="email">Mandami una email</string>
+    <string name="website">Visita il mio vecchio sito</string>
+    <string name="linkedIn">Aggiungimi su LinkedIn</string>
+    <string name="facebook">Trovami su Facebook</string>
+    <string name="twitter">Seguimi su Twitter</string>
+    <string name="resume">Scarica il mio Curriculum Vitae</string>
+</resources>

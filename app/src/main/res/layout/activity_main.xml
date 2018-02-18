@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_margin"
+        android:layout_marginRight="@dimen/activity_margin"
+        android:layout_marginBottom="@dimen/activity_margin"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/contact"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@string/contactPic"
+            app:srcCompat="@drawable/contact" />
+
+        <TextView
+            android:id="@+id/nome"
+            android:layout_below="@id/contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="@string/idName" />
+
+        <TextView
+            android:id="@+id/prof"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_below="@id/nome"
+            android:text="@string/role" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_below="@id/prof"
+            android:layout_toRightOf="@id/addressPic"
+            android:layout_toEndOf="@id/addressPic"
+            android:text="@string/postalAddress" />
+
+        <TextView
+            android:id="@+id/zipCode"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_below="@id/address"
+            android:layout_toRightOf="@id/addressPic"
+            android:layout_toEndOf="@id/addressPic"
+            android:text="@string/postalCode" />
+
+        <TextView
+            android:id="@+id/city"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_below="@id/zipCode"
+            android:layout_toRightOf="@id/addressPic"
+            android:layout_toEndOf="@id/addressPic"
+            android:text="@string/city" />
+
+        <TextView
+            android:id="@+id/country"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_below="@id/city"
+            android:layout_toRightOf="@id/addressPic"
+            android:layout_toEndOf="@id/addressPic"
+            android:text="@string/country" />
+
+        <ImageView
+            android:id="@+id/addressPic"
+            android:layout_marginTop="16dp"
+            android:layout_below="@id/prof"
+            android:layout_width="@dimen/icon_width"
+            android:layout_height="@dimen/icon_height"
+            android:contentDescription="@string/addressPic"
+            app:srcCompat="@drawable/address" />
+
+        <ImageView
+            android:id="@+id/picture"
+            android:layout_marginTop="16dp"
+            android:layout_below="@id/contact"
+            android:layout_width="120dp"
+            android:layout_height="130dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/idPic"
+            app:srcCompat="@drawable/logo_gce" />
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_below="@id/country"
+            android:text="@string/message" />
+
+        <ImageView
+            android:id="@+id/phonePic"
+            android:layout_alignTop="@id/phone"
+            android:layout_width="@dimen/icon_width"
+            android:layout_height="@dimen/icon_height"
+            android:contentDescription="@string/phonePic"
+            app:srcCompat="@drawable/phone" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_below="@id/message"
+            android:layout_toEndOf="@id/phonePic"
+            android:layout_toRightOf="@id/phonePic"
+            android:text="@string/phoneNumber" />
+
+        <ImageView
+            android:id="@+id/mailPic"
+            android:layout_width="@dimen/icon_width"
+            android:layout_height="@dimen/icon_height"
+            android:layout_alignTop="@id/mail"
+            android:contentDescription="@string/emailPic"
+            app:srcCompat="@drawable/mail" />
+
+        <TextView
+            android:id="@+id/mail"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_below="@id/phone"
+            android:layout_toRightOf="@id/mailPic"
+            android:layout_toEndOf="@id/mailPic"
+            android:text="@string/email" />
+
+        <ImageView
+            android:id="@+id/websitePic"
+            android:layout_alignTop="@id/website"
+            android:layout_width="@dimen/icon_width"
+            android:layout_height="@dimen/icon_height"
+            android:contentDescription="@string/websitePic"
+            app:srcCompat="@drawable/website" />
+
+        <TextView
+            android:id="@+id/website"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_below="@id/mail"
+            android:layout_toRightOf="@id/websitePic"
+            android:layout_toEndOf="@id/websitePic"
+            android:text="@string/website" />
+
+        <ImageView
+            android:id="@+id/linkedinPic"
+            android:layout_alignTop="@id/linkedin"
+            android:layout_width="@dimen/icon_width"
+            android:layout_height="@dimen/icon_height"
+            android:contentDescription="@string/linkedInPic"
+            app:srcCompat="@drawable/linkedin" />
+
+        <TextView
+            android:id="@+id/linkedin"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_below="@id/website"
+            android:layout_toRightOf="@id/linkedinPic"
+            android:layout_toEndOf="@id/linkedinPic"
+            android:text="@string/linkedIn" />
+
+        <ImageView
+            android:id="@+id/fbPic"
+            android:layout_alignTop="@id/fb"
+            android:layout_width="@dimen/icon_width"
+            android:layout_height="@dimen/icon_height"
+            android:contentDescription="@string/facebookPic"
+            app:srcCompat="@drawable/fb" />
+
+        <TextView
+            android:id="@+id/fb"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_below="@id/linkedin"
+            android:layout_toRightOf="@id/fbPic"
+            android:layout_toEndOf="@id/fbPic"
+            android:text="@string/facebook" />
+
+        <ImageView
+            android:id="@+id/twitterPic"
+            android:layout_alignTop="@id/twitter"
+            android:layout_width="@dimen/icon_width"
+            android:layout_height="@dimen/icon_height"
+            android:contentDescription="@string/twitterPic"
+            app:srcCompat="@drawable/twitter" />
+
+        <TextView
+            android:id="@+id/twitter"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_below="@id/fb"
+            android:layout_toRightOf="@id/twitterPic"
+            android:layout_toEndOf="@id/twitterPic"
+            android:text="@string/twitter" />
+
+        <ImageView
+            android:id="@+id/resumePic"
+            android:layout_alignTop="@id/resume"
+            android:layout_width="@dimen/icon_width"
+            android:layout_height="@dimen/icon_height"
+            android:contentDescription="@string/resumePic"
+            app:srcCompat="@drawable/resume" />
+
+        <TextView
+            android:id="@+id/resume"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_below="@id/twitter"
+            android:layout_toRightOf="@id/resumePic"
+            android:layout_toEndOf="@id/resumePic"
+            android:text="@string/resume" />
+
+    </RelativeLayout>
+</ScrollView>
