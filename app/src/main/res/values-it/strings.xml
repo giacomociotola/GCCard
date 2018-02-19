@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">GCCard</string>
     <string name="contactPic">Contatti</string>
     <string name="role">Sviluppatore Android</string>
     <string name="country">Italia</string>

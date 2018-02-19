@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="activity_margin">16dp</dimen>
-    <dimen name="icon_height">30dp</dimen>
-    <dimen name="icon_width">30dp</dimen>
+    <dimen name="icon">30dp</dimen>
+    <dimen name="textview_margin_top">20dp</dimen>
+    <dimen name="textview_margin_top_small">16dp</dimen>
+    <dimen name="textview_margin_left">12dp</dimen>
+    <dimen name="text_size">16sp</dimen>
+    <dimen name="text_size_medium">18sp</dimen>
+    <dimen name="text_size_big">20sp</dimen>
+    <dimen name="main_image_height">80dp</dimen>
+    <dimen name="logo_height">130dp</dimen>
+    <dimen name="logo_width">120dp</dimen>
 </resources>

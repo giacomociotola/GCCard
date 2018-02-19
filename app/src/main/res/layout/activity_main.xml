@@ -17,7 +17,7 @@
         <ImageView
             android:id="@+id/contact"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
+            android:layout_height="@dimen/main_image_height"
             android:layout_alignParentTop="true"
             android:contentDescription="@string/contactPic"
             app:srcCompat="@drawable/contact" />
@@ -27,7 +27,7 @@
             android:layout_below="@id/contact"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
+            android:textSize="@dimen/text_size_big"
             android:textStyle="bold"
             android:text="@string/idName" />
 
@@ -35,18 +35,18 @@
             android:id="@+id/prof"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
+            android:textSize="@dimen/text_size_medium"
             android:layout_below="@id/nome"
             android:text="@string/role" />
 
         <TextView
             android:id="@+id/address"
             android:layout_marginTop="16dp"
-            android:layout_marginStart="12dp"
-            android:layout_marginLeft="12dp"
+            android:layout_marginStart="@dimen/textview_margin_left"
+            android:layout_marginLeft="@dimen/textview_margin_left"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
+            android:textSize="@dimen/text_size"
             android:layout_below="@id/prof"
             android:layout_toRightOf="@id/addressPic"
             android:layout_toEndOf="@id/addressPic"
@@ -54,11 +54,11 @@
 
         <TextView
             android:id="@+id/zipCode"
-            android:layout_marginStart="12dp"
-            android:layout_marginLeft="12dp"
+            android:layout_marginStart="@dimen/textview_margin_left"
+            android:layout_marginLeft="@dimen/textview_margin_left"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
+            android:textSize="@dimen/text_size"
             android:layout_below="@id/address"
             android:layout_toRightOf="@id/addressPic"
             android:layout_toEndOf="@id/addressPic"
@@ -66,11 +66,11 @@
 
         <TextView
             android:id="@+id/city"
-            android:layout_marginLeft="12dp"
-            android:layout_marginStart="12dp"
+            android:layout_marginStart="@dimen/textview_margin_left"
+            android:layout_marginLeft="@dimen/textview_margin_left"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
+            android:textSize="@dimen/text_size"
             android:layout_below="@id/zipCode"
             android:layout_toRightOf="@id/addressPic"
             android:layout_toEndOf="@id/addressPic"
@@ -78,11 +78,11 @@
 
         <TextView
             android:id="@+id/country"
-            android:layout_marginStart="12dp"
-            android:layout_marginLeft="12dp"
+            android:layout_marginStart="@dimen/textview_margin_left"
+            android:layout_marginLeft="@dimen/textview_margin_left"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
+            android:textSize="@dimen/text_size"
             android:layout_below="@id/city"
             android:layout_toRightOf="@id/addressPic"
             android:layout_toEndOf="@id/addressPic"
@@ -90,19 +90,19 @@
 
         <ImageView
             android:id="@+id/addressPic"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="@dimen/textview_margin_top_small"
             android:layout_below="@id/prof"
-            android:layout_width="@dimen/icon_width"
-            android:layout_height="@dimen/icon_height"
+            android:layout_width="@dimen/icon"
+            android:layout_height="@dimen/icon"
             android:contentDescription="@string/addressPic"
             app:srcCompat="@drawable/address" />
 
         <ImageView
             android:id="@+id/picture"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="@dimen/textview_margin_top_small"
             android:layout_below="@id/contact"
-            android:layout_width="120dp"
-            android:layout_height="130dp"
+            android:layout_width="@dimen/logo_width"
+            android:layout_height="@dimen/logo_height"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:contentDescription="@string/idPic"
@@ -110,50 +110,51 @@
 
         <TextView
             android:id="@+id/message"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="@dimen/textview_margin_top_small"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
+            android:textSize="@dimen/text_size"
             android:layout_below="@id/country"
             android:text="@string/message" />
 
         <ImageView
             android:id="@+id/phonePic"
             android:layout_alignTop="@id/phone"
-            android:layout_width="@dimen/icon_width"
-            android:layout_height="@dimen/icon_height"
+            android:layout_width="@dimen/icon"
+            android:layout_height="@dimen/icon"
             android:contentDescription="@string/phonePic"
             app:srcCompat="@drawable/phone" />
 
         <TextView
             android:id="@+id/phone"
-            android:layout_marginStart="12dp"
-            android:layout_marginLeft="12dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginStart="@dimen/textview_margin_left"
+            android:layout_marginLeft="@dimen/textview_margin_left"
+            android:layout_marginTop="@dimen/textview_margin_top_small"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
+            android:textSize="@dimen/text_size"
             android:layout_below="@id/message"
             android:layout_toEndOf="@id/phonePic"
             android:layout_toRightOf="@id/phonePic"
+            android:contentDescription="@string/phonePic"
             android:text="@string/phoneNumber" />
 
         <ImageView
             android:id="@+id/mailPic"
-            android:layout_width="@dimen/icon_width"
-            android:layout_height="@dimen/icon_height"
+            android:layout_width="@dimen/icon"
+            android:layout_height="@dimen/icon"
             android:layout_alignTop="@id/mail"
             android:contentDescription="@string/emailPic"
             app:srcCompat="@drawable/mail" />
 
         <TextView
             android:id="@+id/mail"
-            android:layout_marginStart="12dp"
-            android:layout_marginLeft="12dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginStart="@dimen/textview_margin_left"
+            android:layout_marginLeft="@dimen/textview_margin_left"
+            android:layout_marginTop="@dimen/textview_margin_top"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
+            android:textSize="@dimen/text_size"
             android:layout_below="@id/phone"
             android:layout_toRightOf="@id/mailPic"
             android:layout_toEndOf="@id/mailPic"
@@ -162,19 +163,19 @@
         <ImageView
             android:id="@+id/websitePic"
             android:layout_alignTop="@id/website"
-            android:layout_width="@dimen/icon_width"
-            android:layout_height="@dimen/icon_height"
+            android:layout_width="@dimen/icon"
+            android:layout_height="@dimen/icon"
             android:contentDescription="@string/websitePic"
             app:srcCompat="@drawable/website" />
 
         <TextView
             android:id="@+id/website"
-            android:layout_marginTop="20dp"
-            android:layout_marginStart="12dp"
-            android:layout_marginLeft="12dp"
+            android:layout_marginStart="@dimen/textview_margin_left"
+            android:layout_marginLeft="@dimen/textview_margin_left"
+            android:layout_marginTop="@dimen/textview_margin_top"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
+            android:textSize="@dimen/text_size"
             android:layout_below="@id/mail"
             android:layout_toRightOf="@id/websitePic"
             android:layout_toEndOf="@id/websitePic"
@@ -183,19 +184,19 @@
         <ImageView
             android:id="@+id/linkedinPic"
             android:layout_alignTop="@id/linkedin"
-            android:layout_width="@dimen/icon_width"
-            android:layout_height="@dimen/icon_height"
+            android:layout_width="@dimen/icon"
+            android:layout_height="@dimen/icon"
             android:contentDescription="@string/linkedInPic"
             app:srcCompat="@drawable/linkedin" />
 
         <TextView
             android:id="@+id/linkedin"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="12dp"
-            android:layout_marginStart="12dp"
+            android:layout_marginStart="@dimen/textview_margin_left"
+            android:layout_marginLeft="@dimen/textview_margin_left"
+            android:layout_marginTop="@dimen/textview_margin_top"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
+            android:textSize="@dimen/text_size"
             android:layout_below="@id/website"
             android:layout_toRightOf="@id/linkedinPic"
             android:layout_toEndOf="@id/linkedinPic"
@@ -204,19 +205,19 @@
         <ImageView
             android:id="@+id/fbPic"
             android:layout_alignTop="@id/fb"
-            android:layout_width="@dimen/icon_width"
-            android:layout_height="@dimen/icon_height"
+            android:layout_width="@dimen/icon"
+            android:layout_height="@dimen/icon"
             android:contentDescription="@string/facebookPic"
             app:srcCompat="@drawable/fb" />
 
         <TextView
             android:id="@+id/fb"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="12dp"
-            android:layout_marginStart="12dp"
+            android:layout_marginStart="@dimen/textview_margin_left"
+            android:layout_marginLeft="@dimen/textview_margin_left"
+            android:layout_marginTop="@dimen/textview_margin_top"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
+            android:textSize="@dimen/text_size"
             android:layout_below="@id/linkedin"
             android:layout_toRightOf="@id/fbPic"
             android:layout_toEndOf="@id/fbPic"
@@ -225,19 +226,19 @@
         <ImageView
             android:id="@+id/twitterPic"
             android:layout_alignTop="@id/twitter"
-            android:layout_width="@dimen/icon_width"
-            android:layout_height="@dimen/icon_height"
+            android:layout_width="@dimen/icon"
+            android:layout_height="@dimen/icon"
             android:contentDescription="@string/twitterPic"
             app:srcCompat="@drawable/twitter" />
 
         <TextView
             android:id="@+id/twitter"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="12dp"
-            android:layout_marginStart="12dp"
+            android:layout_marginStart="@dimen/textview_margin_left"
+            android:layout_marginLeft="@dimen/textview_margin_left"
+            android:layout_marginTop="@dimen/textview_margin_top"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
+            android:textSize="@dimen/text_size"
             android:layout_below="@id/fb"
             android:layout_toRightOf="@id/twitterPic"
             android:layout_toEndOf="@id/twitterPic"
@@ -246,19 +247,19 @@
         <ImageView
             android:id="@+id/resumePic"
             android:layout_alignTop="@id/resume"
-            android:layout_width="@dimen/icon_width"
-            android:layout_height="@dimen/icon_height"
+            android:layout_width="@dimen/icon"
+            android:layout_height="@dimen/icon"
             android:contentDescription="@string/resumePic"
             app:srcCompat="@drawable/resume" />
 
         <TextView
             android:id="@+id/resume"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="12dp"
-            android:layout_marginStart="12dp"
+            android:layout_marginStart="@dimen/textview_margin_left"
+            android:layout_marginLeft="@dimen/textview_margin_left"
+            android:layout_marginTop="@dimen/textview_margin_top"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
+            android:textSize="@dimen/text_size"
             android:layout_below="@id/twitter"
             android:layout_toRightOf="@id/resumePic"
             android:layout_toEndOf="@id/resumePic"
